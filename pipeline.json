@@ -1,24 +1,24 @@
-// [
-//     {
-//         "type":"readers.las",
-//         "filename":"LAS/Tile_+003_+005.las"
-//     },
-//     {
-//         "type":"writers.text",
-//         "format":"csv",
-//         "order":"X,Y,Z",
-//         "keep_unspecified":"true",
-//         "filename":"outputfile.txt"
-//     }
-// ]
 [
     {
- 
+        "type":"readers.las",
         "filename":"LAS/Tile_+003_+005.las"
     },
     {
-        "type":"writers.ply",
-        "storage_mode":"little endian",
-        "filename":"outputfile.ply"
+        "type":"writers.text",
+        "format":"csv",
+        "order":"X,Y,Z,Red,Green,Blue",
+        "keep_unspecified":"false",
+        "filename":"outputfile.csv"
     }
 ]
+// [
+//     {
+ 
+//         "filename":"LAS/Tile_+003_+005.las"
+//     },
+//     {
+//         "type":"writers.ply",
+//         "storage_mode":"little endian",
+//         "filename":"outputfile.ply"
+//     }
+// ]
