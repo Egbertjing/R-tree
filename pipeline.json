@@ -1,0 +1,24 @@
+// [
+//     {
+//         "type":"readers.las",
+//         "filename":"LAS/Tile_+003_+005.las"
+//     },
+//     {
+//         "type":"writers.text",
+//         "format":"csv",
+//         "order":"X,Y,Z",
+//         "keep_unspecified":"true",
+//         "filename":"outputfile.txt"
+//     }
+// ]
+[
+    {
+ 
+        "filename":"LAS/Tile_+003_+005.las"
+    },
+    {
+        "type":"writers.ply",
+        "storage_mode":"little endian",
+        "filename":"outputfile.ply"
+    }
+]
