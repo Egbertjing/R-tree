@@ -319,10 +319,10 @@ def main():
     tree.stats()
 
     # Writes Tree data to file
-    tree.write_to_file('rtree.txt')
+    tree.write_to_file('Data/rtree.txt')
 
     predicates = [intersects, inside, contains]
-    with open('query_rectangles.txt', 'r') as f:
+    with open('Data/query_rectangles.txt', 'r') as f:
         for line in f:
             query = line.strip('\n').split('\t')
             query_id = query[0]
